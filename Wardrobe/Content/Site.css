@@ -1,13 +1,14 @@
 ﻿body {
-    padding-top: 50px;
-    padding-bottom: 20px;
+    /*padding-top: 50px;
+    padding-bottom: 20px;*/
+    background-color: #26062D;
 }
 
 /* Set padding to keep content from hitting the edges */
-.body-content {
+/*.body-content {
     padding-left: 15px;
     padding-right: 15px;
-}
+}*/
 
 /* Override the default bootstrap behavior where horizontal description lists 
    will truncate terms that are too long to fit in the left column 
@@ -17,8 +18,51 @@
 }
 
 /* Set width on the form input elements since they're 100% wide by default */
-input,
+/*input,
 select,
 textarea {
     max-width: 280px;
+}*/
+
+.homepageCat {
+    color: #CA2B4E;
+    text-align: center;
+    font-family: 'Architects Daughter', cursive;
+    font-size:40px;
+
 }
+
+.homepageCat2 {
+    color: #CA2B4E;
+    text-align: center;
+    font-family: 'Architects Daughter', cursive;
+    font-size:32px;
+
+}
+
+.homepageBlurbs {
+    color: #8C53CE;
+    font-family: 'Short Stack', cursive;
+    font-size: 18px;
+}
+
+.btn-primary {
+    margin: 0px 0px 0px 20px;
+    padding: 10px 0px 10px 15px;
+    border: #CA2B4E groove;
+    background-color:#26062D;
+
+}
+
+
+
+/*ALL OF THE COLORS I WANT TO USE*/
+/*purple #692F84 light purple #A47DA0 deep pink #CA2B4E super dark purple #26062D pretty blue #8C53CE*/
+/*ALL OF THE FONTS*/
+/*
+font-family: 'Architects Daughter', cursive;
+font-family: 'Delius', cursive;
+font-family: 'Short Stack', cursive; --
+font-family: 'Walter Turncoat', cursive; -- ALL CAPS
+
+*/
