@@ -1,6 +1,6 @@
 ﻿body {
-    /*padding-top: 50px;
-    padding-bottom: 20px;*/
+    padding-top: 50px;
+    padding-bottom: 20px;
     background-color: #26062D;
 }
 
@@ -25,7 +25,7 @@ textarea {
 }*/
 
 .homepageCat {
-    color: #CA2B4E;
+    color: #a3d414;
     text-align: center;
     font-family: 'Architects Daughter', cursive;
     font-size:40px;
@@ -33,11 +33,23 @@ textarea {
 }
 
 .homepageCat2 {
-    color: #CA2B4E;
+    color: #a3d414;
     text-align: center;
     font-family: 'Architects Daughter', cursive;
     font-size:32px;
 
+}
+
+.viewTitles {
+        color: #a3d414;
+    font-family: 'Architects Daughter', cursive;
+    font-size:28px;
+}
+
+.viewLabels {
+        color: #8C53CE;
+    font-family: 'Short Stack', cursive;
+    font-size: 18px;
 }
 
 .homepageBlurbs {
@@ -57,7 +69,7 @@ textarea {
 
 
 /*ALL OF THE COLORS I WANT TO USE*/
-/*purple #692F84 light purple #A47DA0 deep pink #CA2B4E super dark purple #26062D pretty blue #8C53CE*/
+/*purple #692F84 light purple #A47DA0 deep pink #CA2B4E super dark purple #26062D pretty blue #8C53CE lime green a3d414*/
 /*ALL OF THE FONTS*/
 /*
 font-family: 'Architects Daughter', cursive;
