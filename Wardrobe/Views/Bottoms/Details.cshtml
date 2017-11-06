@@ -4,68 +4,23 @@
     ViewBag.Title = "Details";
 }
 
-<h2>Details</h2>
-
 <div>
-    <h4>Bottom</h4>
-    <hr />
+
+    <div class="row container-fluid">
+        <div class="form-group homepageCat ">@Html.DisplayFor(model => model.Name)</div>
+        <div>
+            <img class="images col-md-2" src="@Html.DisplayFor(model => model.Photo)" alt="...">
 
 
+        </div>
+
+        <div class="form-group viewLabels">Good for: @Html.DisplayFor(model => model.Occasion.OccasionType) wear</div>
+        <div class="form-group viewLabels">During: @Html.DisplayFor(model => model.Season.TheSeason) season</div>
+        <p >
+            @Html.ActionLink("Edit", "Edit", new { id = Model.BottomID }) |
+            @Html.ActionLink("Back to List", "Index")
+        </p>
 
 
-
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.Name)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Name)
-        </dd>
-
-        <dt>
-            @*@Html.DisplayNameFor(model => model.Photo)*@
-        </dt>
-@* PHOTO @Url.Content(Model.Photo)*@
-        <dd>
-           @Html.DisplayFor(model => model.Photo)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.BottomType)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.BottomType)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Color.ColorName)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Color.ColorName)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Occasion.OccasionType)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Occasion.OccasionType)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Season.TheSeason)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Season.TheSeason)
-        </dd>
-
-    </dl>
+    </div>
 </div>
-<p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.BottomID }) |
-    @Html.ActionLink("Back to List", "Index")
-</p>

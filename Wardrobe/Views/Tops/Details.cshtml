@@ -4,63 +4,23 @@
     ViewBag.Title = "Details";
 }
 
-<h2>Details</h2>
-
 <div>
-    <h4>Top</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.Name)
-        </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.Name)
-        </dd>
+    <div class="row container-fluid">
+        <div class="form-group homepageCat ">@Html.DisplayFor(model => model.Name)</div>
+        <div>
+            <img class="images col-md-2" src="@Html.DisplayFor(model => model.Photo)" alt="...">
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Photo)
-        </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.Photo)
-        </dd>
+        </div>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.TopType)
-        </dt>
+        <div class="form-group viewLabels">Good for: @Html.DisplayFor(model => model.Occasion.OccasionType) wear</div>
+        <div class="form-group viewLabels">During: @Html.DisplayFor(model => model.Season.TheSeason) season</div>
+        <p >
+            @Html.ActionLink("Edit", "Edit", new { id = Model.TopID }) |
+            @Html.ActionLink("Back to List", "Index")
+        </p>
 
-        <dd>
-            @Html.DisplayFor(model => model.TopType)
-        </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Color.ColorName)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Color.ColorName)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Occasion.OccasionType)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Occasion.OccasionType)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Season.TheSeason)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Season.TheSeason)
-        </dd>
-
-    </dl>
+    </div>
 </div>
-<p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.TopID }) |
-    @Html.ActionLink("Back to List", "Index")
-</p>
