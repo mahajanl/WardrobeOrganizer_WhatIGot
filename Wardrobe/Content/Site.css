@@ -23,21 +23,37 @@ select,
 textarea {
     max-width: 75%;
 }
-
-.navbar-fixed-top {
-    background-color: none;
-    color: #a3d414;
+/*NAVBAR*/
+    nav#navvy.navbar.navbar-static-top {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: #8C53CE;
+    background-color: #26062D;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 18px;
 }
-
-    .navbar-fixed-top li {
-        color: #a3d414;
+#navvy a {
+    color: #8C53CE;
+}
+    #navvy a:hover {
+        background: #a3d414;
     }
 
+button.navbar-toggle {
+    border: 1px solid #8C53CE;
+}
+
+span.icon-bar {
+    border: 1px solid #8C53CE;
+}
+
+
 .jumbotron {
-    background-image: url('jumbotronPicture.jpg');
-    color: white;
+    background-color: #26062D;
+    color: #a3d414;
     text-align: center;
     font-family: 'Architects Daughter', cursive;
+    margin-bottom: 0px;
 }
 
 .lead {
@@ -50,6 +66,7 @@ textarea {
     font-family: 'Short Stack', cursive;
 }
 
+/*text LABELS for ALL PAGES*/
 .homepageCat {
     color: #a3d414;
     text-align: center;
@@ -73,9 +90,7 @@ textarea {
 
 .viewLabels,
 .homepageBlurbs
-
- {
-        color: #8C53CE;
+ {color: #8C53CE;
     font-family: 'Short Stack', cursive;
     font-size: 18px;
 }
@@ -87,14 +102,18 @@ textarea {
     padding-top: 0px;
 }
 
+/*BUTTON*/
 .btn-primary {
-    margin: 0px 0px 0px 20px;
-    padding: 10px 0px 10px 15px;
+    margin: 0px 0px 0px 0px;
+    padding: 5px 0px 5px 0px;
     border: #CA2B4E groove;
     background-color:#26062D;
-
+    font-family: 'Short Stack', cursive;
+    font-size: 20px;
+    text-align:center;
 }
 
+/*INDEX DISPLAYS*/
 .thumbnail {
     /*padding: 10px 10px 0px 10px;*/
     /*margin: 10px 10px 0px 10px;*/
@@ -102,7 +121,6 @@ textarea {
     text-align:center;
     background-color: #26062D;
     margin-bottom: 10px;
-
 }
 
 .images {
@@ -110,15 +128,12 @@ textarea {
     max-height: 210px;
 }
 
-
 .jumbotron-footer {
     width: 100%;
     padding-top: 50px;
     color: white;
     text-align: center;
-    
-
-}
+   }
 
 /*ALL OF THE COLORS I WANT TO USE*/
 /*purple #692F84 light purple #A47DA0 deep pink #CA2B4E super dark purple #26062D pretty blue #8C53CE lime green a3d414*/

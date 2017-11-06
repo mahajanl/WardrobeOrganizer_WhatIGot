@@ -3,15 +3,16 @@
 }
 
 <div class="jumbotron">
-    <h1 class="jumboHead">What I've Got</h1>
-    
+    @*<h1 class="jumboHead">What I've Got</h1>*@
+    <h1 class="homepageCat">I've Got Stuff</h1>
+    <p class="lead">A convenient way to organize your closet, shoe rack, and jewelry box - all in one spot.</p>
     
 </div>
 
 <div class="row container-fluid">
     <div>
-        <h2 class="homepageCat">I've Got Stuff</h2>
-        <p class="lead">A convenient way to organize your closet, shoe rack, and jewelry box - all in one spot.</p>
+        @*<h2 class="homepageCat">I've Got Stuff</h2>
+        <p class="lead">A convenient way to organize your closet, shoe rack, and jewelry box - all in one spot.</p>*@
         
         <div class="col-md-6">
             <h2 class="homepageCat2">I've Got Tops</h2>
@@ -19,7 +20,7 @@
             I've got t-shirts and long sleeve shirts and blouses and button ups and tank tops and flannels and sweaters 
             and sweat shirts and hoodies and pajama tops and camisoles and burn outs and spaghetti straps and knits and 
             linens and I will always need more.
-            </p><div class="btn-primary  col-md-4 ">@Html.ActionLink("Tops", "Index", "Tops")</div>
+            </p><div class="btn-primary  col-md-6 ">@Html.ActionLink("Tops", "Index", "Tops")</div>
              
         </div>
         <div class="col-md-6">
@@ -29,7 +30,7 @@
                 shorts and bell bottoms and pajama bottoms and workout leggings and yoga pants and lounge pants and dress
                 pants and I will always need more.
             </p>
-            <div class="btn-primary  col-md-4">
+            <div class="btn-primary  col-md-6">
                 @Html.ActionLink("Bottoms", "Index", "Bottoms")
             </div>
 </div>
@@ -46,7 +47,7 @@
                 I've got high heels that are stilettos and wedges and pumps, and flats and flip flops and sandals and hiking shoes and tall boot and
                 cowboy boots and ankle boots and tennis shoes and running shoes and water shoes and ballet slippers and converses
                 and high tops and I will always need more.
-            <div class="btn-primary  col-md-4 ">@Html.ActionLink("Shoes", "Index", "Shoes")</div>
+            <div class="btn-primary  col-md-6 ">@Html.ActionLink("Shoes", "Index", "Shoes")</div>
         </div>
         <div class="col-md-6">
             <h2 class="homepageCat">I've Got Accessories</h2>
@@ -54,7 +55,7 @@
                 I've got crowns and tiaras and hats and scarves and shawls and capes and swords and sheilds and plated armor
                 and chain mail and a morningstar and amulets and necklaces and stud earrings and dangle earrings and nose rings
                 and bracelets and charms and I will always need more.
-            <div class="btn-primary  col-md-4 ">@Html.ActionLink("Accessories", "Index", "Accesses")</div>
+            <div class="btn-primary  col-md-6 ">@Html.ActionLink("Accessories", "Index", "Accesses")</div>
         </div>
     </div>
 </div>
