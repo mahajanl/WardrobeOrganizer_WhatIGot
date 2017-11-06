@@ -4,12 +4,33 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+<h2 class="homepageCat">I've Got Accessories</h2>
 
-<p>
-    @Html.ActionLink("Create New", "Create")
+<p class="viewLabels">
+    @Html.ActionLink("I Got Another!", "Create")
 </p>
-<table class="table">
+
+<div class="row container-fluid">
+    @foreach (var item in Model)
+    {
+
+        <div class="row container-fluid col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <img class="images" src="@Html.DisplayFor(modelItem => item.Photo)" alt="...">
+                <div class="caption">
+                    <h3 class="viewTitles"> @Html.DisplayFor(modelItem => item.Name) </h3>
+                    <p class="viewLabelsDetails"> @Html.ActionLink("Details", "Details", new { id = item.AccessID }) </p>
+                    <p class="viewLabels">   @Html.ActionLink("Edit", "Edit", new { id = item.AccessID })</p>
+                    <p class="viewLabels"> @Html.ActionLink("Got Rid of It", "Delete", new { id = item.AccessID })</p>
+                </div>
+            </div>
+        </div>
+    }
+
+</div>
+
+
+@*<table class="table">
     <tr>
         <th>
             @Html.DisplayNameFor(model => model.Name)
@@ -60,4 +81,4 @@
     </tr>
 }
 
-</table>
+</table>*@

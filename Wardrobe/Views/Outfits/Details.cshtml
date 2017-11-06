@@ -1,0 +1,74 @@
+﻿@model Wardrobe.Models.Outfit
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Outfit</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ShirtID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ShirtID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BottomID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BottomID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AccessID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AccessID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ShoesID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ShoesID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SeasonID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SeasonID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OccasionID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OccasionID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ColorID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ColorID)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.OutfitID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

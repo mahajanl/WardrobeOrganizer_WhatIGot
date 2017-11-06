@@ -1,14 +1,14 @@
 ﻿body {
     padding-top: 50px;
-    padding-bottom: 20px;
+    margin-bottom: 20px;
     background-color: #26062D;
 }
 
 /* Set padding to keep content from hitting the edges */
-/*.body-content {
+.body-content {
     padding-left: 15px;
     padding-right: 15px;
-}*/
+}
 
 /* Override the default bootstrap behavior where horizontal description lists 
    will truncate terms that are too long to fit in the left column 
@@ -18,18 +18,44 @@
 }
 
 /* Set width on the form input elements since they're 100% wide by default */
-/*input,
+input,
 select,
 textarea {
-    max-width: 280px;
-}*/
+    max-width: 75%;
+}
+
+.navbar-fixed-top {
+    background-color: none;
+    color: #a3d414;
+}
+
+    .navbar-fixed-top li {
+        color: #a3d414;
+    }
+
+
+.jumbotron {
+    background-image: url('jumbotronPicture.jpg');
+    color: white;
+    text-align: center;
+    font-family: 'Architects Daughter', cursive;
+}
+
+.lead {
+    color: #8C53CE;
+    font-family: 'Short Stack', cursive;
+    text-align: center;
+}
+
+.jumboHead {
+    font-family: 'Short Stack', cursive;
+}
 
 .homepageCat {
     color: #a3d414;
     text-align: center;
     font-family: 'Architects Daughter', cursive;
     font-size:40px;
-
 }
 
 .homepageCat2 {
@@ -37,25 +63,29 @@ textarea {
     text-align: center;
     font-family: 'Architects Daughter', cursive;
     font-size:32px;
-
 }
 
 .viewTitles {
         color: #a3d414;
     font-family: 'Architects Daughter', cursive;
     font-size:28px;
+    text-align:center;
 }
 
-.viewLabels {
+.viewLabels,
+.homepageBlurbs
+
+ {
         color: #8C53CE;
     font-family: 'Short Stack', cursive;
     font-size: 18px;
 }
 
-.homepageBlurbs {
+.viewLabelsDetails{
     color: #8C53CE;
     font-family: 'Short Stack', cursive;
-    font-size: 18px;
+    font-size: 22px;
+    padding-top: 0px;
 }
 
 .btn-primary {
@@ -66,7 +96,30 @@ textarea {
 
 }
 
+.thumbnail {
+    /*padding: 10px 10px 0px 10px;*/
+    /*margin: 10px 10px 0px 10px;*/
+    height: 385px;
+    text-align:center;
+    background-color: #26062D;
+    margin-bottom: 10px;
 
+}
+
+.images {
+    width: auto;
+    max-height: 210px;
+}
+
+
+.jumbotron-footer {
+    width: 100%;
+    padding-top: 50px;
+    color: white;
+    text-align: center;
+    
+
+}
 
 /*ALL OF THE COLORS I WANT TO USE*/
 /*purple #692F84 light purple #A47DA0 deep pink #CA2B4E super dark purple #26062D pretty blue #8C53CE lime green a3d414*/

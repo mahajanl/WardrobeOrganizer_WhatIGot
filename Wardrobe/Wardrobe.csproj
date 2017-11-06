@@ -135,6 +135,7 @@
     <Compile Include="Controllers\ColorsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\OccasionsController.cs" />
+    <Compile Include="Controllers\OutfitsController.cs" />
     <Compile Include="Controllers\SeasonsController.cs" />
     <Compile Include="Controllers\ShoesController.cs" />
     <Compile Include="Controllers\TopsController.cs" />
@@ -183,8 +184,21 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\blackLeggings.jpeg" />
+    <Content Include="Content\blueBoots.jpeg" />
+    <Content Include="Content\blueFlannel.jpeg" />
+    <Content Include="Content\blueShoes.jpg" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\flowerSkirt.jpeg" />
+    <Content Include="Content\greyPurse.jpeg" />
+    <Content Include="Content\jeggings.jpeg" />
+    <Content Include="Content\jumbotronPicture.jpg" />
+    <Content Include="Content\orangeTank.jpeg" />
+    <Content Include="Content\pinkHeels.jpeg" />
+    <Content Include="Content\redHeels.jpeg" />
+    <Content Include="Content\rippedLeggings.jpeg" />
+    <Content Include="Content\wolfPurse.jpeg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -269,6 +283,11 @@
     <Content Include="Views\Seasons\Details.cshtml" />
     <Content Include="Views\Seasons\Edit.cshtml" />
     <Content Include="Views\Seasons\Index.cshtml" />
+    <Content Include="Views\Outfits\Create.cshtml" />
+    <Content Include="Views\Outfits\Delete.cshtml" />
+    <Content Include="Views\Outfits\Details.cshtml" />
+    <Content Include="Views\Outfits\Edit.cshtml" />
+    <Content Include="Views\Outfits\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

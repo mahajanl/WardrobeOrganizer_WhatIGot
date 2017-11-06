@@ -1,51 +1,60 @@
 ﻿@{
-    ViewBag.Title = "Got It";
+    ViewBag.Title = "What I've Got";
 }
 
 <div class="jumbotron">
-    <h1>What I got</h1>
-    <p class="lead">A convenient way to organize your closet, shoe rack, and jewelry box - all in one spot.</p>
-    <p><a href="http://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+    <h1 class="jumboHead">What I've Got</h1>
+    
+    
 </div>
 
-<div class="row">
+<div class="row container-fluid">
     <div>
-        <h2 class="homepageCat">I've Got Clothes</h2>
+        <h2 class="homepageCat">I've Got Stuff</h2>
+        <p class="lead">A convenient way to organize your closet, shoe rack, and jewelry box - all in one spot.</p>
         
         <div class="col-md-6">
-            <h3 class="homepageCat2">I've Got Tops</h3>
+            <h2 class="homepageCat2">I've Got Tops</h2>
             <p class="homepageBlurbs">
             I've got t-shirts and long sleeve shirts and blouses and button ups and tank tops and flannels and sweaters 
             and sweat shirts and hoodies and pajama tops and camisoles and burn outs and spaghetti straps and knits and 
             linens and I will always need more.
-            </p>
+            </p><div class="btn-primary  col-md-4 ">@Html.ActionLink("Tops", "Index", "Tops")</div>
+             
         </div>
         <div class="col-md-6">
-            <h3 class="homepageCat2">I've Got Bottoms</h3>
+            <h2 class="homepageCat2">I've Got Bottoms</h2>
             <p class="homepageBlurbs">
                 I've got jeans and leggings and jeggins and tights and short shorts and high waisted shorts and bermuda
                 shorts and bell bottoms and pajama bottoms and workout leggings and yoga pants and lounge pants and dress
                 pants and I will always need more.
             </p>
-        </div>
-        <div class="row">
-            <div class="btn-primary  col-md-4" style="float:right"> @Html.ActionLink("Bottoms", "Index", "Bottoms")</div>
-            <div class="btn-primary  col-md-4 " href="http://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</div>
+            <div class="btn-primary  col-md-4">
+                @Html.ActionLink("Bottoms", "Index", "Bottoms")
+            </div>
+</div>
+        <div class="row container-fluid">
+            
+            
         </div>
         @*LINK TO TOPS AND BOTTOMS*@
-    </div>
-    <div class="col-md-4">
-        <h2 class="homepageCat">I've Got Shoes</h2>
-        <p class="homepageBlurbs">I've got high heels that are stilettoes and wedges and pumps, and flats and flip flops and sandals and hiking shoes and tall boot and 
-        cowboy boots and ankle boots and tennis shoes and running shoes and water shoes and allet slippers and converses
-        and high tops and I will always need more.</p>
-        <div class="btn-primary  col-md-4" href="http://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</div>
-    </div>
-    <div class="col-md-4">
-        <h2 class="homepageCat">I've Got Accessories</h2>
-        <p class="homepageBlurbs">I've got crowns and tiaras and hats and scarves and shawls and capes and swords and sheilds and plated armor
-        and chain mail and a morningstar and amulets and necklaces and stud earrings and dangle earrings and nose rings
-        and bracelets and charm and I will always need more.</p>
-        <div class="btn-primary  col-md-4" href="http://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</div>
+ </div>
+    <div>
+        <div class="row container-fluid col-md-6">
+            <h2 class="homepageCat">I've Got Shoes</h2>
+            <p class="homepageBlurbs">
+                I've got high heels that are stilettos and wedges and pumps, and flats and flip flops and sandals and hiking shoes and tall boot and
+                cowboy boots and ankle boots and tennis shoes and running shoes and water shoes and ballet slippers and converses
+                and high tops and I will always need more.
+            <div class="btn-primary  col-md-4 ">@Html.ActionLink("Shoes", "Index", "Shoes")</div>
+        </div>
+        <div class="col-md-6">
+            <h2 class="homepageCat">I've Got Accessories</h2>
+            <p class="homepageBlurbs">
+                I've got crowns and tiaras and hats and scarves and shawls and capes and swords and sheilds and plated armor
+                and chain mail and a morningstar and amulets and necklaces and stud earrings and dangle earrings and nose rings
+                and bracelets and charms and I will always need more.
+            <div class="btn-primary  col-md-4 ">@Html.ActionLink("Accessories", "Index", "Accesses")</div>
+        </div>
     </div>
 </div>

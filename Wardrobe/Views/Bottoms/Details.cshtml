@@ -9,6 +9,11 @@
 <div>
     <h4>Bottom</h4>
     <hr />
+
+
+
+
+
     <dl class="dl-horizontal">
         <dt>
             @Html.DisplayNameFor(model => model.Name)
@@ -19,11 +24,11 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.Photo)
+            @*@Html.DisplayNameFor(model => model.Photo)*@
         </dt>
-
+@* PHOTO @Url.Content(Model.Photo)*@
         <dd>
-            @Html.DisplayFor(model => model.Photo)
+           @Html.DisplayFor(model => model.Photo)
         </dd>
 
         <dt>
